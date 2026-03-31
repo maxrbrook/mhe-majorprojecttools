@@ -112,7 +112,7 @@ public class AppendToExistingProject extends AbstractAction
 		dialog.add(refine_list_btn);
 		dialog.add(new JScrollPane(list));
 
-		dialog.add(new JLabel("This is a custom dialog box!"));
+		//dialog.add(new JLabel("This is a custom dialog box!"));
 		dialog.add(upload_btn);
 		dialog.setSize(450, 450);
 		dialog.setVisible(true);
