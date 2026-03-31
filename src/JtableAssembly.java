@@ -15,30 +15,36 @@ public class JtableAssembly
 	private void SetAssyTableColumnSize()
 	{
 		int column_count = assy_jtable.getColumnModel().getColumnCount();
-		TableColumn column = null;
 		for (int i = 0; i < column_count; i++)
 		{
-			column = assy_jtable.getColumnModel().getColumn(i);
-			if (i == 0 || i == 1)// Level and Drawing #
-			{
-				column.setPreferredWidth(50);
-			}
+			TableColumn column = assy_jtable.getColumnModel().getColumn(i);
 			if (i == 2 || i == 7)// Order and Notes
 			{
-				column.setPreferredWidth(300);
-			}
-			if (i == 3 || i == 4 || i == 6)
-			{
-				column.setPreferredWidth(20);
-			}
-			if (i == 5)
-			{
-				column.setPreferredWidth(50);
+				column.setMinWidth(200);
 			}
 			else
 			{
-				column.setPreferredWidth(15);
+				column.setMinWidth(80);
 			}
+
+			/*
+			if (i == 0 || i == 1)// Level and Drawing #
+			{
+				column.setMinWidth(20);
+			}
+			if (i == 3 || i == 4 || i == 6 || i == 10)
+			{
+				column.setMinWidth(20);
+				column.setMaxWidth(120);
+			}
+			if (i == 5)
+			{
+				column.setMinWidth(30);
+			}
+			else
+			{
+
+			}*/
 		}
 	}
 

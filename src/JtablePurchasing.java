@@ -89,10 +89,27 @@ public class JtablePurchasing
 	private void SetPurchaseTableColumnSize()
 	{
 		int column_count = purchase_jtable.getColumnModel().getColumnCount();
-		TableColumn column = null;
 		for(int i = 0; i < column_count; i++)
 		{
-			column = purchase_jtable.getColumnModel().getColumn(i);
+
+			TableColumn column = purchase_jtable.getColumnModel().getColumn(i);
+			if (i == 2 || i == 7)// Order and Notes
+			{
+				column.setMinWidth(200);
+			}
+			else
+			{
+				column.setMinWidth(80);
+			}
+			/*
+			if (i == 2 || i == 7)// Order and Notes
+			{
+				column.setMinWidth(200);
+			}
+			else
+			{
+				column.setMinWidth(80);
+			}
 			if(i == 0 || i == 1)
 			{
 				column.setPreferredWidth(50);
@@ -108,7 +125,7 @@ public class JtablePurchasing
 			if(i == 5 || i == 6 || i == 7)
 			{
 				column.setPreferredWidth(15);
-			}
+			}*/
 		}
 	}
 

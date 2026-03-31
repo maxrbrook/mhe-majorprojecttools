@@ -20,6 +20,11 @@ public class DefaultPurchaseRenderer extends DefaultTableCellRenderer
 			c.setForeground(white);
 			return c;
 		}
+		if (column == 3)
+		{
+			c.setBackground(new Color(200, 200, 200));
+			return c;
+		}
 		c.setForeground(Color.BLACK);
 		c.setBackground(row % 2 == 0 ? white: grey);
 		return c;
