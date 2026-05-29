@@ -1,3 +1,5 @@
+package tables;
+
 import java.awt.*;
 import javax.swing.*;
 /*

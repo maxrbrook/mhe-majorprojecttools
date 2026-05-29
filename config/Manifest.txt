@@ -1,5 +1,5 @@
 Main-Class: Main
-Class-Path: lib/jackson/jackson-annotations-2.9.9.jar lib/jackson/jackson-core-2.9.9.jar lib/jackson/jackson-databind-2.9.9.jar
+Class-Path: lib/jackson-annotations-2.9.9.jar lib/jackson-core-2.9.9.jar lib/jackson-databind-2.9.9.jar
 Package-Version: 1.0.0
 Package-Vendor: McCullochs Hydraulic Engineers
 Specification-Title: MajorProjectTools
